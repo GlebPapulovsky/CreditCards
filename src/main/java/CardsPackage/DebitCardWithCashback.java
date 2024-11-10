@@ -1,8 +1,6 @@
 package CardsPackage;
 
-import java.util.concurrent.atomic.AtomicInteger;
-
-public class DebitCardWithCashback extends DebitCard {
+public class DebitCardWithCashback extends DebitCardAbstract {
 
     @Override
     public boolean pay(int value) {

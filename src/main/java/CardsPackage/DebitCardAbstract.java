@@ -1,9 +1,9 @@
 package CardsPackage;
 
-public abstract class DebitCard extends AbstractBankCard {
+public abstract class DebitCardAbstract extends AbstractBankCard {
 
 
-    public DebitCard() {
+    public DebitCardAbstract() {
         this.balance.set(0);
     }
 

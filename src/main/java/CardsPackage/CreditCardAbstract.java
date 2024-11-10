@@ -2,11 +2,11 @@ package CardsPackage;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public abstract class CreditCard extends AbstractBankCard {
+public abstract class CreditCardAbstract extends AbstractBankCard {
     protected AtomicInteger creditLimit = new AtomicInteger();
     protected AtomicInteger creditBalance = new AtomicInteger();
 
-    public CreditCard(int creditLimitValue) {
+    public CreditCardAbstract(int creditLimitValue) {
         this.balance.set(0);
         this.creditBalance.set(creditLimitValue);
         this.creditLimit.set(creditLimitValue);

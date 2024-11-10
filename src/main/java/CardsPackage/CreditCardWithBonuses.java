@@ -2,7 +2,7 @@ package CardsPackage;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class CreditCardWithBonuses extends CreditCard {
+public class CreditCardWithBonuses extends CreditCardAbstract {
     AtomicInteger bonuses = new AtomicInteger();
 
     public CreditCardWithBonuses(int creditLimitValue) {

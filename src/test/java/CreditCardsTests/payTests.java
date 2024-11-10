@@ -1,6 +1,5 @@
 package CreditCardsTests;
 
-import CardsPackage.CreditCard;
 import CardsPackage.CreditCardWithBonuses;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
 package CardsPackage;
 
-public class CreditCardWithCashback extends CreditCard {
+public class CreditCardWithCashback extends CreditCardAbstract {
 
 
     public CreditCardWithCashback(int creditLimitValue) {
