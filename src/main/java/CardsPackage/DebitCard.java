@@ -1,31 +1,28 @@
 package CardsPackage;
 
-public class DebitCard extends AbstractBankCard {
+public abstract class DebitCard extends AbstractBankCard {
 
 
-    public DebitCard(){
+    public DebitCard() {
         this.balance.set(0);
     }
 
-    @Override
+    /*@Override
     public boolean pay(int value) {
-        if (value>=0){
-            if (value<=this.balance.get()){
-                this.balance.set(this.balance.get()-value);
+        if (value >= 0) {
+            if (value <= this.balance.get()) {
+                this.balance.set(this.balance.get() - value);
                 return true;
             }
         }
         return false;
-    }
+    }*/
+
 
     @Override
-    public int getBalance() {
-        return this.balance.get();
-    }
-    @Override
-    public boolean topUp(int value) {
-        if (value>0){
-            this.balance.set(this.balance.get()+value);
+    public final boolean topUp(int value) {
+        if (value > 0) {
+            this.balance.set(this.balance.get() + value);
             return true;
         }
         return false;
